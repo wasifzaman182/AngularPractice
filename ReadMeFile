@@ -1,0 +1,115 @@
+Architecture of angular:
+=======================:
+
+        ==> Modules
+                   --> The different functionality of a website is called modules like user, admin etc. 
+                   --> which represent feature area.
+
+                   Note:
+                   --> Each angular application has at least one module which is AppModule -->root module  
+                   --> Each module is in turn made up of component and services.
+        
+        ==> Component
+                   --> The component is controlling the view part on the browser 
+                        
+                        eg: 
+                         --> component for Navigation one for sidebar
+                         --> component for main content
+
+                    Note: 
+                    --> The angular applicaiton will at least have one root component that is AppComponent  
+                    --> All other component will be put inside in this main component (Root Component)
+                    --> Each component contains and HTML template and a class to control the logic for that particular view module
+
+        ==> Services
+                    --> Services which is basically a class that contains the business logic of your application in addition to components and services.
+        
+
+        Note:
+                Modules interact and ultimately render the view in the browser.
+
+================================================================================================================================================================
+
+                                        Different files in project
+                                        ==========================
+
+Packages.json
+=============:
+            --> Contains the dependencies and the dev dependencies which are nothing but the libraries or modules there that are required for your angualr application 
+                to work the packages listed here get installed when you run the command ng new hello world and all the packages and get installed inside the node modules folder.
+
+            --> We have some of the scripts that can be executed the ng self command is one of them which runs our applicaiton you can also execute npm start which
+                will internally call the ng serve command.
+
+
+main.js
+=======:
+           --> main.js file is the entry point for the project
+
+App module.ts
+=============:
+           --> app module is the root app module for the project
+
+App Component.ts
+================:
+            --> app component is the root app component for the project
+    
+
+  Note:
+  =====: 
+
+        --> When application run main.ts file will kick start app module.ts and app module.ts will kickstart AppComponent.ts   
+
+===========================================================================================================================================================
+
+What is component in angular?
+=============================
+                            --> Component is made of three things
+                                1) Template: 
+                                            Tamplate in the component is the view part or HTML file.
+                                2) Class:
+                                            A class in the component is the typescript code that contain Data and mehtods to show or hide some functionlity on the view.
+                                3) Metadata:
+                                        --> A metadata in the component is the information on which angular needs to decide that if particular class in fact an angular component or just a class.
+                                        --> the meta data is defined using a decorator which is a feature in typescript, a decorator is just a function that provides information about the class attached to it and for component we use the component decorator.
+
+
+@Component decorator:
+=====================:
+                       component decorator contain three things
+                       1) selector:
+                          =========
+                                  --> Selector is basically a custom HTML tag that can be used to represent the component (class), when you specify selector in HTML, angular renders the component template in its place.
+
+                        2) TemplateUrl:
+                           ===========
+                                    --> Selector hit the templateurl and the templateurl points to an HTML file that represents the view for the component 
+                                     --> We can also use inline html by changing templateurl into template and start using in between  ``
+
+                        3) styleUrls:
+                           ========== 
+                                    --> styleurls points the style file of the component.
+                                    --> We can also use inline css by changing styleurl into style and start using in between  ``
+
+Data Binding in angular:
+=======================:
+                        --> we can bind data by using double curly braces {{}} (Check code examples)
+                        --> we can contact data by using + between two strings 
+=======================================================================================================
+
+Important points:
+================
+                --> All the components that we created using command it will added in declarations array in app module
+                --> The root component of the whole angular application is app component.html and all other components will render in the root component
+                    (this step is done using test component for reference check the code)
+               
+Different ways to call component selector:
+=========================================
+                                          --> by using <name of component></name of component>
+                                          --> by making selector a class like .nameOf_component and the call it as <div class="nameof_component"></div>
+                                          --> by using brackets like selector:[nameof_component] and call it as attributes <div nameof_component></div>
+
+=======================================================================================================
+Different commonds of angualr   
+1) to genereate angualr project --> ng new "project name"
+2) to generate a component --> ng g c "component name"
