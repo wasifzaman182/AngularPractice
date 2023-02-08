@@ -25,6 +25,17 @@ import { Component, OnInit } from '@angular/core';
   <h3>
     Example of site address {{siteUrl}}
   </h3>
+  <br><br>
+  <h3>
+    Example of Property binding 
+  </h3>
+  <input type="text" value="wasif">
+  <br><br>
+  <h3>
+    Example of Property binding using bind-propertyName
+  </h3>
+  <input bind-disabled="isDisabled" type="text" value="wasif">
+
   `,
   styleUrls: ['./test.component.css']
 })
@@ -32,6 +43,8 @@ export class TestComponent implements OnInit {
 
   public username="wasif";
   public siteUrl=window.location.href;
+  public isDisabled=true;
+
   constructor() { }
 
   ngOnInit(): void {

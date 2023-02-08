@@ -95,6 +95,23 @@ Data Binding in angular:
 =======================:
                         --> we can bind data by using double curly braces {{}} (Check code examples)
                         --> we can contact data by using + between two strings 
+
+Difference between Property and Attribute
+=========================================
+                        --> Attributes and properties are not the same.
+                        --> Attributes are HTML.
+                        --> Properites are DOM (Document Object Model)
+                        --> Attributes initialize DOM properites and then they are done.Attributes values cannot change once they are initialized.
+                        --> Property values howerver can change.
+       
+
+Property Binding in Angular:
+============================
+
+        --> We can also use interpolation for property binding but we can only bind string value.
+        --> Data binding with interpolation cannot work with boolean property such as disabled.
+        --> We can also bind property using "bind-property name" (check the code in test.component.ts)
+                
 =======================================================================================================
 
 Important points:
