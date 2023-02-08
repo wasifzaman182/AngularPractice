@@ -98,11 +98,11 @@ Data Binding in angular:
 
 Difference between Property and Attribute
 =========================================
-                        --> Attributes and properties are not the same.
-                        --> Attributes are HTML.
-                        --> Properites are DOM (Document Object Model)
-                        --> Attributes initialize DOM properites and then they are done.Attributes values cannot change once they are initialized.
-                        --> Property values howerver can change.
+        --> Attributes and properties are not the same.
+        --> Attributes are HTML.
+        --> Properites are DOM (Document Object Model)
+        --> Attributes initialize DOM properites and then they are done.Attributes values cannot change once they are initialized.
+        --> Property values howerver can change.
        
 
 Property Binding in Angular:
@@ -111,7 +111,40 @@ Property Binding in Angular:
         --> We can also use interpolation for property binding but we can only bind string value.
         --> Data binding with interpolation cannot work with boolean property such as disabled.
         --> We can also bind property using "bind-property name" (check the code in test.component.ts)
-                
+
+Class Binding for styles in Angular:
+====================================
+        --> This can be done using example --> check code below <h2> Class binding </h2> in test.component.ts
+        
+    Note:
+        --> you can only use class binding or proprty binding (for test check the example 3 in test.component.ts) but not both at same time.
+            if you use both 
+
+        --> Conditionaly applying html (find the code example wiht the name of conditionaly applying html).
+
+How to apply multiple classes:
+==============================
+        --> We can conditionaly apply multiple class on on heading by using [ngClass] ( check the code example).
+
+
+Event Binding:
+=============:
+
+        Two types of binding
+        1) Data binding --> when we pass data from class to template is called data binding
+        2) Event binding --> when we pass data from template to class is called event binding.
+        (check out the code and click on great example)
+
+Template Reference Variables:
+============================:
+        --> we will need these variables whenever we need to pass data from view to class and perform some validations
+            (Check out the code example)  
+
+
+Two way binding:
+===============:
+        --> Two way binding is the type of binding in which view changes will be directly refected into class and class changes will be directedly reflected into view.
+        
 =======================================================================================================
 
 Important points:
