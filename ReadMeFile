@@ -144,7 +144,15 @@ Template Reference Variables:
 Two way binding:
 ===============:
         --> Two way binding is the type of binding in which view changes will be directly refected into class and class changes will be directedly reflected into view.
-        
+
+
+Structural Directives:  (for the structural directives example created seprate component called structural direcitves)
+======================
+        Three types of structural directives --> to add or remvoe HTML elements from the DOM
+        1) ngIf --> use to conditional render the html elements
+        2) ngSwitch --> use to conditional render the html elements
+        3) ngFor  --> use to render list of HTML elements 
+
 =======================================================================================================
 
 Important points:
