@@ -149,9 +149,17 @@ Two way binding:
 Structural Directives:  (for the structural directives example created seprate component called structural direcitves)
 ======================
         Three types of structural directives --> to add or remvoe HTML elements from the DOM
-        1) ngIf --> use to conditional render the html elements
+        1) ngIf --> use to conditional render the html elements 
         2) ngSwitch --> use to conditional render the html elements
         3) ngFor  --> use to render list of HTML elements 
+
+
+Component Interaction:
+=====================
+        --> This concept come into picture when parent component want to shar some data with child and child wants to shar with parent.
+        Note:
+        --> when parent wants to share data with child component it can be done by using @input decorator
+        --> when child  wants to share data with parent component it can be done by using @output decorator
 
 =======================================================================================================
 
