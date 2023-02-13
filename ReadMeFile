@@ -161,6 +161,34 @@ Component Interaction:
         --> when parent wants to share data with child component it can be done by using @input decorator
         --> when child  wants to share data with parent component it can be done by using @output decorator
 
+
+
+Pipes In Angular: (created new component for coding practice purpose name as pipes.component.ts)
+================
+        --> Pipes allows us to transform data before showing on the view.
+        --> for upper and lower case we use | pipe see example.
+
+        Note:
+        =====
+         --> this will only change data for view
+
+Services:
+=========
+why to use severvice
+        1) A class with a specific purpose
+        2) share date
+        3) implement application logic
+        4) External Interaction
+
+ Note:
+ =====
+      Naming convention -.service.ts
+
+ Dependancy Injection:
+ =====================
+        --> Code without DI - drawbacks
+        --> DI as a design pattern
+        --> DI as a framework               
 =======================================================================================================
 
 Important points:

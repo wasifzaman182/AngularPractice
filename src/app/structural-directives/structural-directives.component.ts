@@ -29,11 +29,11 @@ import { Component, Input, OnInit, Output,EventEmitter } from '@angular/core'
               <h2>ngIf heading is then block is headen and else block is showing by using ng-template</h2>
             </ng-template>
             <h1>Examples of ngSwitch</h1>
-            <div [ngSwitch]="color">
-              <div *ngSwitchCase="'red'"><h2>you pick red color</h2></div>
-              <div *ngSwitchCase="'green'"><h2>you pick green color</h2></div>
-              <div *ngSwitchCase="'blue'"><h2>you pick blue color</h2></div>
-              <div *ngSwitchDefault="'orange'"><h2>Pick again</h2></div>
+            <div [ngSwitch]="'color'">
+              <div *ngSwitchCase="'red'">you pick red color</div>
+              <div *ngSwitchCase="'green'">you pick green color</div>
+              <div *ngSwitchCase="'blue'">you pick blue color</div>
+              <div *ngSwitchDefault="'orange'">Pick again</div>
             </div>
             <br>
             <h1>Examples of ngFor</h1>
@@ -42,7 +42,7 @@ import { Component, Input, OnInit, Output,EventEmitter } from '@angular/core'
             </div>
             <br>
             <h1>Examples of component interaction from  parent componet (app.component.ts) to child component(structural.direcitves.component.ts)</h1>
-            <h2>Hello {{name}}</h2>
+            <h2>Hello {{Myname}}</h2>
             <br>
             <h1>Examples of component interaction from child component(structural.direcitves.component.ts) to parent componet (app.component.ts) </h1>
            <button (click)="fireEvent()")>Send Event</button>
@@ -52,7 +52,7 @@ import { Component, Input, OnInit, Output,EventEmitter } from '@angular/core'
 export class StructuralDirectivesComponent implements OnInit {
 
   //TODO :parent and child interaction issue
-  @Input() public name: any;
+  @Input() public Myname:any;
   @Output() public child = new EventEmitter();
 
 

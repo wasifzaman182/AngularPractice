@@ -5,12 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
+import { PipesComponentComponent } from './pipes-component/pipes-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
-    StructuralDirectivesComponent
+    StructuralDirectivesComponent,
+    PipesComponentComponent
   ],
   imports: [
     BrowserModule,

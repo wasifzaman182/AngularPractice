@@ -4,9 +4,13 @@
     <span>From AppComponent</span></h1>
 
     <h1 style="text-align: center;"> 
-      <span>{{message}}</span></h1>
+      <span>{{name}}</span></h1>
    <!-- <app-test></app-test> -->  <!--Un comment for test component related examples-->
 
    <!--Putting structural directive -->
-   <app-structural-directives (child)="message=$event"  [name]="name"></app-structural-directives>
+  <!-- <app-structural-directives  [Myname]="name"></app-structural-directives>-->  
+
+  <!-- Pipes directive examples-->
+
+  <app-pipes-component></app-pipes-component>
   
