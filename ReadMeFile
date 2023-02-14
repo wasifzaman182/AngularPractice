@@ -184,11 +184,90 @@ why to use severvice
  =====
       Naming convention -.service.ts
 
- Dependancy Injection:
+ Dependancy Injection: (All the practicle will be done in EmployeeService, employeelist, employeeDetails ) creating the service using commond ng g s employee
  =====================
-        --> Code without DI - drawbacks
-        --> DI as a design pattern
-        --> DI as a framework               
+        --> examples will be done in employeelist and employee details components
+        --> you will find the @injectable decorator on the service which is includede by angular cli, this means may be this service class also dependent on other services also, so it is mendatory.
+        --> why @injectable decorator is not on the component --> the reason is @component decorator tills the angular that may be i have to inject the services so in other words it also work of @injectable decorator as well.
+
+           --> it will be good idea to register the base service in the app module provider array, this will be available across the application 
+        1) --> Code without DI - drawbacks
+        ================================
+        e.g
+                public class Engine{
+                        Engine(param); //after adding param the line no 203 will show an error 
+                }
+                public class Tires{
+                        Tires();
+                }
+
+                public class Car{
+                        engine;
+                        tires;
+                        Car(){
+                                this.engine=new Engine();
+                                this.tires=new Tires();
+                        }
+                }
+
+       Note:
+       ==== 
+        --> if we change in engine constructor the object of engine in car class will broke. it is the first drawback
+        --> can not test with this  behaviour
+       
+
+       2) --> DI as a design pattern
+        ============================
+               --> DI is a coding pattern in which a class receives its dependencies from external source rather than creating them itself.
+                e.g
+  
+           public class Engine{
+                        Engine();
+                }
+                public class Tires{
+                        Tires();
+                }
+
+                public class Car{
+                        engine;
+                        tires;
+                        Car(engine, tires)
+                        {
+                                this.engine=engine;
+                                this.tires=tries;
+                        }
+            
+        }
+
+         // code will run perfectly 
+        var e = new Engine();
+        var t = new tire();
+        var mCar = new Car(e, t);
+
+        Note        
+        ===:
+           --> now if there is any change the car code will not be broke.     
+           --> but there is also an issue, if we have 100s of class and car class is dependent on it and some class are dependent on other classes then this will create         problem     
+
+       3) --> DI as a framework:
+        =======================
+               --> in this case we create injector which is basically a container that will hold all the objects 
+               E.g
+                Define the EmployeeService class
+                Register with injector 
+                Declare as dependancy in Emplist and EmpDetail
+
+
+
+HTTP and Observables in Angualr: (For testing purpose i created json file in assets--> data-->empolyee.json)
+===============================:
+--> observables is when http response back is called observables. for observables it is mendatory to subscribe it for those can data only be provided.
+--> A sequence of items that arrive asynchronously over time.
+--> HTTP call - single item
+--> Single item - HTTP response
+--> HttpClientModule is used --> first import it in app module so it is accessable in app module.
+
+
 =======================================================================================================
 
 Important points:
