@@ -267,7 +267,29 @@ HTTP and Observables in Angualr: (For testing purpose i created json file in ass
 --> Single item - HTTP response
 --> HttpClientModule is used --> first import it in app module so it is accessable in app module.
 
+Catch operator on HTTP call: (example is done in employee service) //TODO: will cover it from other sources video 22
+===========================:
+  --> To handle the exception on http we need to use catch operator 
 
+
+
+Routing in Angular:
+===================
+ --> Routing is used to navigate from one view to another view
+
+ Add the AppRoutingModule
+=========================
+--> In Angular, the best practice is to load and configure the router in a separate, top-level module. The router is dedicated to routing and imported by the root AppModule.
+
+--> By convention, the module class name is AppRoutingModule and it belongs in the app-routing.module.ts in the src/app directory.
+
+--> Run ng generate to create the application routing module.
+      
+--> ng generate module app-routing --flat --module=app
+
+      -->  Parameter 	Details
+        --flat 	         Puts the file in src/app instead of its own directory.
+        --module=app 	Tells ng generate to register it in the imports array of the AppModule.
 =======================================================================================================
 
 Important points:

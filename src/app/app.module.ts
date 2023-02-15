@@ -9,7 +9,8 @@ import { PipesComponentComponent } from './pipes-component/pipes-component.compo
 import { EmployeeService } from './employee.service';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module'
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import {HttpClientModule} from '@angular/common/http'
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    AppRoutingModule,
     
   ],
   providers: [EmployeeService],
