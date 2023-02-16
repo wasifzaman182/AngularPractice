@@ -9,8 +9,7 @@ import { PipesComponentComponent } from './pipes-component/pipes-component.compo
 import { EmployeeService } from './employee.service';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
-import {HttpClientModule} from '@angular/common/http';
-import { AppRoutingModule } from './app-routing.module'
+import {HttpClientModule} from '@angular/common/http';   
 
 @NgModule({
   declarations: [
@@ -19,13 +18,12 @@ import { AppRoutingModule } from './app-routing.module'
     StructuralDirectivesComponent,
     PipesComponentComponent,
     EmployeeListComponent,
-    EmployeeDetailsComponent
+    EmployeeDetailsComponent,  
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule,
-    AppRoutingModule,
+    HttpClientModule, 
     
   ],
   providers: [EmployeeService],

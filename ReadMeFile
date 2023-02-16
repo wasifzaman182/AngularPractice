@@ -277,7 +277,7 @@ Routing in Angular:
 ===================
  --> Routing is used to navigate from one view to another view
 
- Add the AppRoutingModule
+ Add the AppRoutingModule (for this will create new project name as AppRouting and we will continue from there)
 =========================
 --> In Angular, the best practice is to load and configure the router in a separate, top-level module. The router is dedicated to routing and imported by the root AppModule.
 
