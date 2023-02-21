@@ -308,6 +308,11 @@ Note:
      --> when we try to access a url which is not present it will throw an error so we are going to create seperate component.
 	 --> the wild card route should be the last one --> if you put this on top it will always route to this one.
 generating seperate component name as page not found.
+     -->  
+	
+Route Parameters:
+=================
+     --> 
 =======================================================================================================
 
 Important points:

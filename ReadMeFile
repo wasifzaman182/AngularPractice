@@ -308,6 +308,20 @@ Note:
      --> when we try to access a url which is not present it will throw an error so we are going to create seperate component.
 	 --> the wild card route should be the last one --> if you put this on top it will always route to this one.
 generating seperate component name as page not found.
+     -->  
+	
+	Read about new updates of newer version
+=============================================
+To update your angular project go to update.angular.io
+there you can select the current version and on which version want to go
+complexity of your project
+package manager 
+ 
+ and click on how to update
+ it will recommend the changes before update, during update, after update follow that steps carefully
+
+
+	
 =======================================================================================================
 
 Important points:
