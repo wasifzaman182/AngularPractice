@@ -1,32 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TestComponent } from './test/test.component';
-import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
-import { PipesComponentComponent } from './pipes-component/pipes-component.component';
-import { EmployeeService } from './employee.service';
-import { EmployeeListComponent } from './employee-list/employee-list.component';
-import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
-import {HttpClientModule} from '@angular/common/http';   
+import { EmployeeListComponent } from '../AppRoutingProject/employee-list/employee-list.component';
+import { DepartmentlistComponent } from '../AppRoutingProject/departmentlist/departmentlist.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent,
-    StructuralDirectivesComponent,
-    PipesComponentComponent,
     EmployeeListComponent,
-    EmployeeDetailsComponent,  
+    DepartmentlistComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpClientModule, 
-    
+    AppRoutingModule
   ],
-  providers: [EmployeeService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,22 +1,9 @@
-  
-
-   <h1 style="text-align: center;"> 
-    <span>From AppComponent</span></h1>
-
-    <h1 style="text-align: center;"> 
-      <span>{{name}}</span></h1>
-   <!-- <app-test></app-test>   Un comment for test component related examples -->
-
-   <!--Putting structural directive -->
-  <!-- <app-structural-directives  [Myname]="name"></app-structural-directives>   -->
-
-  <!-- Pipes directive examples-->
-  <h1 style="text-align: center;"> 
-   <span>Routing and Navigation</span></h1>
-
- 
-<!--   
-  <app-pipes-component></app-pipes-component>
-  <app-employee-list></app-employee-list>
-  <app-employee-details></app-employee-details>
-   -->
+<div style="text-align: center;">
+  <h1>App Routing </h1>
+</div>
+<nav>
+  <!-- routerLink is used to router component,  routerLinkActive is used to apply the css-->
+  <a routerLink="/department" routerLinkActive="active">Department Lsit</a>
+  <a routerLink="/employee" routerLinkActive="active">Employee List</a>
+</nav>
+<router-outlet></router-outlet>
